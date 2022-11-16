@@ -41,7 +41,7 @@ namespace ProbpracticeGen
             }
 
             Console.WriteLine("Welcome to the Problem Practice Generator");
-            Console.WriteLine($"What is the problem you are encountering?\nHere are your options: {string.Join("/ ", Problem)}");
+            Console.WriteLine($"What is the problem you are encountering?\nHere are your options: {string.Join("/ ", Problem.Distinct())}");
 
             string? userProblem = Console.ReadLine();
 
